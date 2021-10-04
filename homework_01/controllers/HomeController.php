@@ -6,10 +6,9 @@ use main\app\App;
 use main\models\Dictionary;
 
 class HomeController {
-    public static function getWords() {
+    public static function home() {
 
         if ($_SERVER["REQUEST_METHOD"] === 'GET') {
-            // TODO: fetch words from database
             $dict = new Dictionary();
             $words = $dict->selectAll();
 
