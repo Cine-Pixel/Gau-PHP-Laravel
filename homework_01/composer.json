@@ -1,0 +1,15 @@
+{
+    "name": "ikaum/homework_01",
+    "authors": [
+        {
+            "name": "Cine-Pixel",
+            "email": "ikaumphriani@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "main\\": "."
+        }
+    },
+    "require": {}
+}
