@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 
-require_once __DIR__.'/vendor/autoload.php';
+require_once __DIR__.'/../vendor/autoload.php';
 
 use main\app\App;
 use main\controllers\HomeController;
@@ -19,7 +19,7 @@ $config = [
 ];
 
 
-$app = new App(dirname(__FILE__), $config);
+$app = new App(dirname(__DIR__), $config);
 
 $app->router->add('/', [HomeController::class, 'home']);
 $app->router->add('/test', function() {

@@ -1,7 +1,7 @@
 <h1>Dictionary</h1>
 <br>
 
-<form>
+<form method="POST" action="">
   <h3>Add new word</h3>
   <div class="form-row">
     <div class="col">
@@ -14,7 +14,7 @@
   </div>
 
   <br>
-  <button type="submit" class="btn btn-primary">Save</button>
+  <input type="submit" class="btn btn-primary" value="Save">
 </form>
 <br>
 
@@ -36,8 +36,8 @@
             <td> <?= $pair["word_ge"] ?> </td>
             <td> <?= $pair["word_en"] ?> </td>
             <td>
-              <button class="btn btn-success btn-sm">Update</button>
-              <button class="btn btn-danger btn-sm">Delete</button>
+              <button data-id='<?= $pair["id"] ?>' id="word-update" class="btn btn-success btn-sm" >Update</button>
+              <button data-id='<?= $pair["id"] ?>' id = "word-delete" class="btn btn-danger btn-sm" onclick='sendDelete(this)'>Delete</button>
             </td>
           <tr>
       <?php
