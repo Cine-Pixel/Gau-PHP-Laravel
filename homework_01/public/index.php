@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 // Display errors on webpage
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -10,6 +12,7 @@ require_once __DIR__.'/../vendor/autoload.php';
 
 use main\app\App;
 use main\controllers\HomeController;
+use main\controllers\TestController;
 
 $config = [
     "servername" => "localhost",
@@ -22,8 +25,6 @@ $config = [
 $app = new App(dirname(__DIR__), $config);
 
 $app->router->add('/', [HomeController::class, 'home']);
-$app->router->add('/test', function() {
-    return App::$app->router->render("test", []);
-});
+$app->router->add('/test', [TestController::class, 'index']);
 
 $app->run();

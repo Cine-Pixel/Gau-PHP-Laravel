@@ -21,4 +21,8 @@ class Database {
     public function prepare($sql): \PDOStatement {
         return $this->conn->prepare($sql);
     }
+
+    public function query($sql): \PDOStatement {
+        return $this->conn->query($sql);
+    }
 }

@@ -34,7 +34,7 @@ class Router {
         return call_user_func($callback);
     }
 
-    public function render(string $view, array $params) {
+    public function render(string $view, array $params=[]) {
         $viewContent = $this->renderView($view, $params);
         ob_start();
         include_once App::$ROOT_DIR."/views/base.php";

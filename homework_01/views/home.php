@@ -37,7 +37,12 @@
             <td> <?= $pair["word_en"] ?> </td>
             <td>
               <button data-id='<?= $pair["id"] ?>' id="word-update" class="btn btn-success btn-sm" >Update</button>
-              <button data-id='<?= $pair["id"] ?>' id = "word-delete" class="btn btn-danger btn-sm" onclick='sendDelete(this)'>Delete</button>
+              <button 
+                data-id='<?= $pair["id"] ?>' 
+                id = "word-delete" 
+                class="btn btn-danger btn-sm" 
+                onclick='sendDelete(this)'
+              >Delete</button>
             </td>
           <tr>
       <?php
