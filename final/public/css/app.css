@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: teal;
+}
+
+nav {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #333;
+}
+
+.logo {
+    font-size: 20pt;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+table {
+    border: 1px solid #333;
+    border-collapse: collapse;
+}
+
+tr, td {
+    border: 1px solid #333;
+}
+
+td {
+    padding: 5px;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='date'],
+input[type='datetime'] {
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid teal;
+}
+
+input[type='submit']{
+    background-color: teal;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type='submit']:hover {
+    background-color: rgba(0, 128, 128, 0.685);
+}
+
